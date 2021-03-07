@@ -3,6 +3,9 @@ const app = express();
 const bodyparser = require("body-parser")
 const connnection = require('./database/database');
 
+const categoriesController = require("./categories/CategoriesController")
+const articlesController = require("./articles/ArticlesController")
+
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
@@ -22,6 +25,10 @@ app.get("/teste", (req, res) => {
     res.render("index")
 })
 
+app.use("/",categoriesController);
+app.use("/",articlesController);
+
 app.listen(8080,() =>{
     console.log("Aplicação OK");
 })
+
