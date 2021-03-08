@@ -7,4 +7,4 @@ const connection =  new Sequelize('guiapress','root','admin',{
 
 });
 
-module.exports =connection;
+module.exports = connection;
