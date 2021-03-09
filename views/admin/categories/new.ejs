@@ -7,8 +7,8 @@
             <h2>Cadastro de categoria:</h2>
         </div>
         <div class="card-body">
-            <form>
-                <input class="form-control" type="text" placeholder="Defina o título da categoria">
+            <form method="post" action="/categories/save">
+                <input class="form-control" name="title" type="text" placeholder="Defina o título da categoria">
                 <br>
                 <button class="btn btn-success">Cadastrar</button>
             </form> 
