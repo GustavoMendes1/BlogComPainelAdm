@@ -28,8 +28,6 @@ app.get("/", (req, res) => {
     res.render("index")
 })
 
-
-
 app.use("/",categoriesController);
 app.use("/",articlesController);
 
